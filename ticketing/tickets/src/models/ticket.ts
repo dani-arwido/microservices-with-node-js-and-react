@@ -11,8 +11,8 @@ interface TicketDoc extends mongoose.Document {
   price: number;
   title: string;
   userId: string;
-  orderId?: string;
   version: number;
+  orderId?: string;
 }
 
 interface TicketModel extends mongoose.Model<TicketDoc> {

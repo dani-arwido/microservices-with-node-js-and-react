@@ -32,6 +32,7 @@ router.post(
       userId: ticket.userId,
     });
 
+    console.log(ticket.version);
     res.status(201).send(ticket);
   }
 );

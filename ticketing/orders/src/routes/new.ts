@@ -29,7 +29,7 @@ router.post(
   requireAuth,
   async (req: Request, res: Response, next: NextFunction) => {
     const { ticketId } = req.body;
-
+    console.log('asd');
     const ticket = await Ticket.findById(ticketId);
     if (!ticket) {
       return next(new NotFoundError());
